@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <script>
+        let net;
+        async function app() {
+            console.log('Loading mobilenet..');
+            // Load the model.
+            net = await mobilenet.load();
+            console.log('Successfully loaded model');
+            // Make a prediction through the model on our image.
+            const imgEl = document.getElementById('img');
+            const result = await net.classify(imgEl);
+            console.log(result);
+        }
+        app();
+    </script>
+  </head>
+  <body>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+<!--     <img id="img" crossorigin src="https://http2.mlstatic.com/pantalon-cargo-tactico-simil-511-fuerza-seguridad-hombre-D_Q_NP_715327-MLA32498306577_102019-F.webp" width="227" height="227"/>
+ -->    <img id="img" crossorigin src="https://images-na.ssl-images-amazon.com/images/I/715FLWSp%2B-L._AC_UX385_.jpg" width="227" height="227"/>    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
