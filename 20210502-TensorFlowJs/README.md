@@ -11,6 +11,9 @@ Imagenet es el dataset de imágenes de dominio público con el que fue entrenado
 ### Teacheble Machine
 [Repo de Teachable Machine](https://github.com/googlecreativelab/teachablemachine-community/blob/master/libraries/image/src/teachable-mobilenet.ts)
 
+### Proyectos de prueba que expuso Cristian
+https://github.com/cristian473/ML_models-reactTemplate
+
 ### Custom Vision
 [CustomVision](https://www.customvision.ai/)
 
