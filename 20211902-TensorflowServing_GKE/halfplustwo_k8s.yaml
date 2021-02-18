@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: halfplustwo-container
-        image: gcr.io/uma-v2/tensorflow-serving/halfplustwo@sha256:279357c1d156bdfeaa8f8597d9a6f0b08cfc0db16144d3abcfc30a48749ee994
+        image: #insertar ruta de la imagen subida a gcr
         ports:
         - containerPort: 8501
 ---
