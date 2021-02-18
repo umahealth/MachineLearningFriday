@@ -141,7 +141,7 @@ First we create a
 for service deployment.
 
 ```shell
-$ gcloud container clusters create halfplustwo-serving-cluster --num-nodes 5 --machine-type=n1-standard-1 --zone=us-central1-a
+$ gcloud container clusters create halfplustwo-serving-cluster --num-nodes 3 --machine-type=n1-standard-1 --zone=us-east1-b
 ```
 
 
@@ -155,7 +155,7 @@ gcloud container clusters get-credentials halfplustwo-serving-cluster
 
 ### Create Kubernetes Deployment and Service
 
-The deployment consists of 3 replicas of `halfplustwo_inference` server controlled by
+The deployment consists of 2 replicas of `halfplustwo_inference` server controlled by
 a [Kubernetes Deployment](http://kubernetes.io/docs/user-guide/deployments/).
 The replicas are exposed externally by a
 [Kubernetes Service](http://kubernetes.io/docs/user-guide/services/) along with
