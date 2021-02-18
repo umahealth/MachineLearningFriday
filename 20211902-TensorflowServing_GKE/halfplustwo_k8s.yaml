@@ -21,7 +21,7 @@ spec:
   selector:
     matchLabels:
       app: halfplustwo-server
-  replicas: 3
+  replicas: 2
   template:
     metadata:
       labels:
