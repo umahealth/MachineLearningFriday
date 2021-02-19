@@ -223,3 +223,18 @@ Events:
 ```
 
 The service external IP address is listed next to LoadBalancer Ingress.
+
+To add more pods (go from 2 to 3):
+
+```console
+$ kubectl scale deployment halfplustwo-deployment --replicas 3
+```
+
+```console
+$ kubectl get deplyment halfplustwo-deployment
+```
+
+```console
+NAME                                  DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
+halfplustwo-deployment                3         3         3            3           15m
+```
